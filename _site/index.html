@@ -2,564 +2,545 @@
 <html>
 
   <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
-	<meta name="description" content="">
-	
-	<link rel="canonical" href="http://localhost:4000/">
-	<link rel="alternate" type="application/rss+xml" title="" href="http://localhost:4000/feed.xml" />
-	
-	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/fontawesome/4.2.0/css/font-awesome.min.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css"> -->
-	
+    <title>Paul</title>
+    <meta name="description" content="">
 
-	<link rel="stylesheet" type="text/css" href="/static/css/index.css">
-	
-	<!-- <script type="text/javascript" src="/static/js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="/static/js/bootstrap.min.js"></script> -->
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="alternate" type="application/rss+xml" title="Paul" href="http://localhost:4000/feed.xml ">
 
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
-	<script type="text/javascript" src="/static/js/index.js"></script>
-	
-	<link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai_sublime.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/railscasts.min.css"> -->
-	<!-- <link rel="stylesheet" type="text/css" href="http://apps.bdimg.com/libs/highlight.js/8.4/styles/monokai.min.css"> -->
-	<!-- <script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/languages/dos.min.js"></script> -->
-	<script type="text/javascript" src="http://apps.bdimg.com/libs/highlight.js/8.4/highlight.min.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
 
-	<script>
-	var _hmt = _hmt || [];
-	(function() {
-	  var hm = document.createElement("script");
-	  hm.src = "//hm.baidu.com/hm.js?b636473d6ffa17615f94e5db1459ea81";
-	  var s = document.getElementsByTagName("script")[0]; 
-	  s.parentNode.insertBefore(hm, s);
-	})();
-	</script>
+
 
 </head>
 
- <!--  <body data-spy="scroll" data-target="#myAffix"> -->
+
   <body>
 
-    <header>
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Paul</a>
+        <small></small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a class="active" href="/">
+                        
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
 
-<!-- navbar -->
-  <nav class="navbar navbar-inverse">
-  <div class="container">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/"></a>
-      <p class="navbar-text">Front-end Dev Engineer</p>
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
     </div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-
-        
-          <li>
-        
-          <a href="/"><span class="glyphicon glyphicon-th-large"></span> Blog</a></li>
-
-        
-          
-            
-              <li>
-            
-            <a href="/demo/"><span class="glyphicon glyphicon-play"></span> Demo</a></li>
-          
-        
-          
-            
-              <li>
-            
-            <a href="/about/"><span class="glyphicon glyphicon-heart"></span> About</a></li>
-          
-        
-          
-            
-              <li>
-            
-            <a href="/about/"><span class="glyphicon glyphicon-heart"></span> About</a></li>
-          
-        
-          
-        
-          
-        
-          
-        
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
 </header>
 
 
-    <div id="main" class="container main">
-      <div id="index" class="row">
-  <div class="col-sm-9">
-    <div class="post-area">
-      <!-- small button -->
-     <!--  <p class="pull-right visible-xs">
-       <button>toggle</button>
-     </p> -->
-      <div class="post-list-header">
-        Posts1111111
-      </div>
-      <div class="post-list-body">
-        
-        <div class="all-posts" post-cate="All">
+        <div class="page clearfix" index>
+    <div class="left">
+        <h1>Welcome to Paul's Blog!</h1>
+        <small>一起学习，共同进步</small>
+        <hr>
+        <ul>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2019/02/13/FlutterArch/">Flutter原理简解</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2019-02-13
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#框架" title="Category: 框架" rel="category">框架</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#移动端" title="Tag: 移动端" rel="tag">移动端</a>&nbsp;
+    
+        <a href="/tag/#iOS" title="Tag: iOS" rel="tag">iOS</a>&nbsp;
+    
+        <a href="/tag/#安卓" title="Tag: 安卓" rel="tag">安卓</a>&nbsp;
+    
+        <a href="/tag/#Flutter" title="Tag: Flutter" rel="tag">Flutter</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+<p>我们都知道显示器以固定的频率刷新，比如 iPhone的 60Hz、iPad Pro的 120Hz。当一帧图像绘制完毕后准备绘制下一帧时，显示器会发出一个垂直同步信号（VSync），所以 60Hz的屏幕就会一秒内发出 60次这样的信号。 
+并且一般地来说，计算机系统中，CPU、GPU和显示器以一种特定的方式协作：CPU将计算好的显示内容提交给 GPU，GPU渲染后放入帧缓冲区，然后视频控制器按照 VSync信号从帧缓冲区取帧数据传递给显示器显示。</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2019/02/13/FlutterArch/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2019/02/12/Flutter/">Flutter概要</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2019-02-12
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#框架" title="Category: 框架" rel="category">框架</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#移动端" title="Tag: 移动端" rel="tag">移动端</a>&nbsp;
+    
+        <a href="/tag/#iOS" title="Tag: iOS" rel="tag">iOS</a>&nbsp;
+    
+        <a href="/tag/#安卓" title="Tag: 安卓" rel="tag">安卓</a>&nbsp;
+    
+        <a href="/tag/#Flutter" title="Tag: Flutter" rel="tag">Flutter</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    
+<p>Flutter是 Google推出并开源的移动应用开发框架，主打跨平台、高保真、高性能。开发语言为Dart，使用 Native引擎渲染视图。开发者可以为 Flutter添加 native扩展。</p>
+
+<p>苹果的 iOS SDKs 发布于 2008 年，谷歌的 Android 软件开发工具包发布于 2009 年，这两种工具包分别基于Objective-C 和 Java编程语言。</p>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2019/02/12/Flutter/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+              <li>
+                <h2>
+                  <a class="post-link" href="/2019/02/11/create-my-blog-with-jekyll/">Mac下使用Jekyll 搭建静态博客</a>
+                </h2>
+                <div class="label">
+                    <div class="label-card">
+                        <i class="fa fa-calendar"></i>2019-02-11
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+                    <div class="label-card">
+                        
+                    </div>
+
+                    <div class="label-card">
+                    
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#jekyll" title="Category: jekyll" rel="category">jekyll</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+                    </div>
+
+                    <div class="label-card">
+                    
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <a href="/tag/#github" title="Tag: github" rel="tag">github</a>&nbsp;
+    
+        <a href="/tag/#blog" title="Tag: blog" rel="tag">blog</a>&nbsp;
+    
+        <a href="/tag/#jekyll" title="Tag: jekyll" rel="tag">jekyll</a>&nbsp;
+    
+        <a href="/tag/#Ruby" title="Tag: Ruby" rel="tag">Ruby</a>&nbsp;
+    
+        <a href="/tag/#Mac" title="Tag: Mac" rel="tag">Mac</a>
+    
+  
+
+</span>
+
+                    </div>
+                </div>
+                <div class="excerpt">
+                    <ul id="markdown-toc">
+  <li><a href="#安装-ruby-环境" id="markdown-toc-安装-ruby-环境">安装 Ruby 环境</a></li>
+</ul>
+
+<h3 id="安装-ruby-环境">安装 Ruby 环境</h3>
+
+<ul>
+  <li>
+    <p>先安装好 RVM</p>
+  </li>
+  <li>
+    <p>在终端控制台输入命令： <code class="highlighter-rouge">$ curl -sSL https://get.rvm.io | bash -s stable</code></p>
+  </li>
+</ul>
+
+
+                </div>
+                <div class="read-all">
+                    <a  href="/2019/02/11/create-my-blog-with-jekyll/"><i class="fa fa-newspaper-o"></i>Read All</a>
+                </div>
+                <hr>
+              </li>
+            
+        </ul>
+
+
+
+        <!-- Pagination links -->
+        <div class="pagination">
           
-            <a class="post-list-item" href="/front-end/javascript/2018/07/24/FlutterArch.html">
-              <h2>
-              Flutter原理简解
-              </h2>
-              <span class="">Jul 24, 2018</span>
-            </a>
+            <span class="previous disable"><i class="fa fa-angle-double-left"></i></span>
+            <span class="previous disable"><i class="fa fa-angle-left"></i></span>
           
-            <a class="post-list-item" href="/front-end/javascript/2018/07/23/Flutter.html">
-              <h2>
-              Flutter概要
-              </h2>
-              <span class="">Jul 23, 2018</span>
-            </a>
+          <span class="page_number ">1/1</span>
           
-            <a class="post-list-item" href="/front-end/javascript/2015/05/20/scope.html">
-              <h2>
-              JavaScript 作用域和作用域链
-              </h2>
-              <span class="">May 20, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/front-end/2015/05/18/front-end-tools.html">
-              <h2>
-              前端的一些资料和工具
-              </h2>
-              <span class="">May 18, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/front-end/javascript/2015/04/23/baidu-ife-2-javascript.html">
-              <h2>
-              百度Web前端技术学院(2)-JavaScript 基础
-              </h2>
-              <span class="">Apr 23, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/front-end/html/css/2015/04/16/baidu-ife-1.html">
-              <h2>
-              百度Web前端技术学院(1)-HTML, CSS基础
-              </h2>
-              <span class="">Apr 16, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/github/2015/04/12/Syncing-a-fork.html">
-              <h2>
-              同步一个 fork
-              </h2>
-              <span class="">Apr 12, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/javascript/2015/04/06/arrays-similar.html">
-              <h2>
-              判断两个数组是否相似 (arraysSimilar)
-              </h2>
-              <span class="">Apr 6, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/sublime/2015/03/26/sublimeLinter.html">
-              <h2>
-              代码校验工具 SublimeLinter 的安装与使用
-              </h2>
-              <span class="">Mar 26, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/bootstrap/2015/03/21/teach-girlfriend-html-css.html">
-              <h2>
-              Teach Girlfriend to make a Web Pages like Zhihu
-              </h2>
-              <span class="">Mar 21, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/jekyll/2015/02/16/create-my-blog-with-jekyll.html">
-              <h2>
-              Jekyll 搭建静态博客
-              </h2>
-              <span class="">Feb 16, 2015</span>
-            </a>
-          
-            <a class="post-list-item" href="/jekyll/2015/02/10/welcome-to-jekyll.html">
-              <h2>
-              hello jekyll!
-              </h2>
-              <span class="">Feb 10, 2015</span>
-            </a>
+            <span class="next disable"><i class="fa fa-angle-right"></i></span>
+            <span class="next disable"><i class="fa fa-angle-double-right"></i></span>
           
         </div>
-        <!-- <div class="posts-in-categories"> -->
-        
-          <div post-cate="jekyll">
-            
-              
-                
-              
-            
-              
-                
-                  <a href="/jekyll/2015/02/16/create-my-blog-with-jekyll.html" class="post-list-item">
-                    <h2>
-                    Jekyll 搭建静态博客
-                    </h2>
-                    <span class="">Feb 16, 2015</span>
-                  </a>
-                
-              
-                
-                  <a href="/jekyll/2015/02/10/welcome-to-jekyll.html" class="post-list-item">
-                    <h2>
-                    hello jekyll!
-                    </h2>
-                    <span class="">Feb 10, 2015</span>
-                  </a>
-                
-              
-            
-          </div>
-        
-          <div post-cate="Bootstrap">
-            
-              
-                
-              
-            
-              
-                
-                  <a href="/bootstrap/2015/03/21/teach-girlfriend-html-css.html" class="post-list-item">
-                    <h2>
-                    Teach Girlfriend to make a Web Pages like Zhihu
-                    </h2>
-                    <span class="">Mar 21, 2015</span>
-                  </a>
-                
-              
-            
-          </div>
-        
-          <div post-cate="Sublime">
-            
-              
-                
-              
-            
-              
-                
-                  <a href="/sublime/2015/03/26/sublimeLinter.html" class="post-list-item">
-                    <h2>
-                    代码校验工具 SublimeLinter 的安装与使用
-                    </h2>
-                    <span class="">Mar 26, 2015</span>
-                  </a>
-                
-              
-            
-          </div>
-        
-          <div post-cate="JavaScript">
-            
-              
-                
-              
-            
-              
-                
-                  <a href="/front-end/javascript/2018/07/24/FlutterArch.html" class="post-list-item">
-                    <h2>
-                    Flutter原理简解
-                    </h2>
-                    <span class="">Jul 24, 2018</span>
-                  </a>
-                
-              
-                
-                  <a href="/front-end/javascript/2018/07/23/Flutter.html" class="post-list-item">
-                    <h2>
-                    Flutter概要
-                    </h2>
-                    <span class="">Jul 23, 2018</span>
-                  </a>
-                
-              
-                
-                  <a href="/front-end/javascript/2015/05/20/scope.html" class="post-list-item">
-                    <h2>
-                    JavaScript 作用域和作用域链
-                    </h2>
-                    <span class="">May 20, 2015</span>
-                  </a>
-                
-              
-                
-                  <a href="/front-end/javascript/2015/04/23/baidu-ife-2-javascript.html" class="post-list-item">
-                    <h2>
-                    百度Web前端技术学院(2)-JavaScript 基础
-                    </h2>
-                    <span class="">Apr 23, 2015</span>
-                  </a>
-                
-              
-                
-                  <a href="/javascript/2015/04/06/arrays-similar.html" class="post-list-item">
-                    <h2>
-                    判断两个数组是否相似 (arraysSimilar)
-                    </h2>
-                    <span class="">Apr 6, 2015</span>
-                  </a>
-                
-              
-            
-          </div>
-        
-          <div post-cate="GitHub">
-            
-              
-                
-              
-            
-              
-                
-                  <a href="/github/2015/04/12/Syncing-a-fork.html" class="post-list-item">
-                    <h2>
-                    同步一个 fork
-                    </h2>
-                    <span class="">Apr 12, 2015</span>
-                  </a>
-                
-              
-            
-          </div>
-        
-          <div post-cate="Front-end">
-            
-              
-                
-              
-            
-              
-                
-                  <a href="/front-end/javascript/2018/07/24/FlutterArch.html" class="post-list-item">
-                    <h2>
-                    Flutter原理简解
-                    </h2>
-                    <span class="">Jul 24, 2018</span>
-                  </a>
-                
-              
-                
-                  <a href="/front-end/javascript/2018/07/23/Flutter.html" class="post-list-item">
-                    <h2>
-                    Flutter概要
-                    </h2>
-                    <span class="">Jul 23, 2018</span>
-                  </a>
-                
-              
-                
-                  <a href="/front-end/javascript/2015/05/20/scope.html" class="post-list-item">
-                    <h2>
-                    JavaScript 作用域和作用域链
-                    </h2>
-                    <span class="">May 20, 2015</span>
-                  </a>
-                
-              
-                
-                  <a href="/front-end/2015/05/18/front-end-tools.html" class="post-list-item">
-                    <h2>
-                    前端的一些资料和工具
-                    </h2>
-                    <span class="">May 18, 2015</span>
-                  </a>
-                
-              
-                
-                  <a href="/front-end/javascript/2015/04/23/baidu-ife-2-javascript.html" class="post-list-item">
-                    <h2>
-                    百度Web前端技术学院(2)-JavaScript 基础
-                    </h2>
-                    <span class="">Apr 23, 2015</span>
-                  </a>
-                
-              
-                
-                  <a href="/front-end/html/css/2015/04/16/baidu-ife-1.html" class="post-list-item">
-                    <h2>
-                    百度Web前端技术学院(1)-HTML, CSS基础
-                    </h2>
-                    <span class="">Apr 16, 2015</span>
-                  </a>
-                
-              
-            
-          </div>
-        
-          <div post-cate="HTML">
-            
-              
-                
-              
-            
-              
-                
-                  <a href="/front-end/html/css/2015/04/16/baidu-ife-1.html" class="post-list-item">
-                    <h2>
-                    百度Web前端技术学院(1)-HTML, CSS基础
-                    </h2>
-                    <span class="">Apr 16, 2015</span>
-                  </a>
-                
-              
-            
-          </div>
-        
-          <div post-cate="CSS">
-            
-              
-                
-              
-            
-              
-                
-                  <a href="/front-end/html/css/2015/04/16/baidu-ife-1.html" class="post-list-item">
-                    <h2>
-                    百度Web前端技术学院(1)-HTML, CSS基础
-                    </h2>
-                    <span class="">Apr 16, 2015</span>
-                  </a>
-                
-              
-            
-          </div>
-        
-        
-        <!-- </div> -->
-      </div>
     </div>
-  </div>
-  <div class="col-sm-3">
-    <div class="shadow-corner-curl hidden-xs">
-      <div class="categories-list-header">
-        Categories
-      </div>
-      
-      <a href="javascript:;" class="categories-list-item" cate="All">
-        All<span class="my-badge"> 8</span>
-      </a>
-      
-        <a href="javascript:;" class="categories-list-item" cate="jekyll">
-          jekyll <span class="my-badge">2</span>
-        </a>
-      
-        <a href="javascript:;" class="categories-list-item" cate="Bootstrap">
-          Bootstrap <span class="my-badge">1</span>
-        </a>
-      
-        <a href="javascript:;" class="categories-list-item" cate="Sublime">
-          Sublime <span class="my-badge">1</span>
-        </a>
-      
-        <a href="javascript:;" class="categories-list-item" cate="JavaScript">
-          JavaScript <span class="my-badge">5</span>
-        </a>
-      
-        <a href="javascript:;" class="categories-list-item" cate="GitHub">
-          GitHub <span class="my-badge">1</span>
-        </a>
-      
-        <a href="javascript:;" class="categories-list-item" cate="Front-end">
-          Front-end <span class="my-badge">6</span>
-        </a>
-      
-        <a href="javascript:;" class="categories-list-item" cate="HTML">
-          HTML <span class="my-badge">1</span>
-        </a>
-      
-        <a href="javascript:;" class="categories-list-item" cate="CSS">
-          CSS <span class="my-badge">1</span>
-        </a>
-      
+    <!-- <button class="anchor"><i class="fa fa-anchor"></i></button> -->
+    <div class="right">
+        <div class="wrap">
+            <div class="side">
+                <div>
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                    Recent Posts
+                </div>
+                <ul class="content-ul" recent>
+                    
+                        <li><a href="/2019/02/13/FlutterArch/">Flutter原理简解</a></li>
+                    
+                        <li><a href="/2019/02/12/Flutter/">Flutter概要</a></li>
+                    
+                        <li><a href="/2019/02/11/create-my-blog-with-jekyll/">Mac下使用Jekyll 搭建静态博客</a></li>
+                    
+                </ul>
+            </div>
+
+            <!-- Content -->
+            <div class="side ">
+                <div>
+                    <i class="fa fa-th-list"></i>
+                    Categories
+                </div>
+                <ul class="content-ul" cate>
+                    
+                    <li>
+                        <a href="/category/#jekyll" class="categories-list-item" cate="jekyll">
+                            <span class="name">
+                                jekyll
+                            </span>
+                            <span class="badge">1</span>
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a href="/category/#框架" class="categories-list-item" cate="框架">
+                            <span class="name">
+                                框架
+                            </span>
+                            <span class="badge">2</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <div class="side">
+                <div>
+                    <i class="fa fa-tags"></i>
+                    Tags
+                </div>
+                <div class="tags-cloud">
+                    
+                    
+                    
+                    
+
+                    
+
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#github" style="font-size: 9pt; color: #999;">github</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#blog" style="font-size: 9pt; color: #999;">blog</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#jekyll" style="font-size: 9pt; color: #999;">jekyll</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Ruby" style="font-size: 9pt; color: #999;">Ruby</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Mac" style="font-size: 9pt; color: #999;">Mac</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#移动端" style="font-size: 18pt; color: #000;">移动端</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#iOS" style="font-size: 18pt; color: #000;">iOS</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#安卓" style="font-size: 18pt; color: #000;">安卓</a>
+                    
+                      
+                      
+                      
+                      
+                      
+                      <a href="/tag/#Flutter" style="font-size: 18pt; color: #000;">Flutter</a>
+                    
+                </div>
+            </div>
+
+            <!-- <div class="side">
+                <div>
+                    <i class="fa fa-external-link"></i>
+                    Links
+                </div>
+                <ul  class="content-ul">
+
+                </ul>
+            </div> -->
+        </div>
     </div>
-  </div>
 </div>
-    </div>
+<!-- <script src="/js/scroll.min.js " charset="utf-8"></script> -->
+<!-- <script src="/js/pageContent.js " charset="utf-8"></script> -->
 
-    
-    <div id="top" data-toggle="tooltip" data-placement="left" title="回到顶部">
-      <a href="javascript:;">
-        <div class="arrow"></div>
-        <div class="stick"></div>
-      </a>
-    </div>
 
-    <footer class="">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <a href="mailto:"><span class="glyphicon glyphicon-envelope"></span> </a>
-        <span class="point"> · </span>
-        
-          <span class="point"> · </span>
-          <span><a href="/feed.xml">RSS</a></span>
-          <span class="point"> · </span>
-          <span></span>
-          <span class="point"> · </span>
-          <span>&copy; 2015 Gaohaoyang</span>
-          <span class="point"> · </span>
-          <span>Designed by <a href="https://github.com/Gaohaoyang">HyG</a></span>
+    <footer class="site-footer">
 
-      </div>
+
+    <div class="wrapper">
+
+        <p class="description">
+             Enjoy your life! 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/paulhappy" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:56517206@qq.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
     </div>
-  </div>
 </footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
 
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"hygblog"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-<!-- 多说公共JS代码 end -->
-
-<!-- 在新窗口中打开 -->
-  <script type="text/javascript">
-    function addBlankTargetForLinks () {
-      $('a[href^="http"]').each(function(){
-          $(this).attr('target', '_blank');
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
       });
-    }
-    $(document).bind('DOMNodeInserted', function(event) {
-      addBlankTargetForLinks();
-    });
-  </script>
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
   </body>
+
 </html>

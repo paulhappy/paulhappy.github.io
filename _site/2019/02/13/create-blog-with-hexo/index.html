@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mac下使用hexo搭建静态博客</title>
+    <meta name="description" content="  准备工作准备工作      安装node 到Node.js官网下载相应平台的最新版本，一路安装即可。        在终端控制台输入命令： npm install -g hexo        输入命令hexo -v显示hexo的版本号即为安装成功  ">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://localhost:4000/2019/02/13/create-blog-with-hexo/">
+    <link rel="alternate" type="application/rss+xml" title="Paul" href="http://localhost:4000/feed.xml ">
+
+
+
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Paul</a>
+        <small></small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/collection/">
+                        
+                            <i class="fa fa-bookmark"></i>Collections
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/demo/">
+                        
+                            <i class="fa fa-play"></i>Demo
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/about/">
+                        
+                            <i class="fa fa-heart"></i>About
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Mac下使用hexo搭建静态博客</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2019-02-13
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#hexo" title="Category: hexo" rel="category">hexo</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#github" title="Tag: github" rel="tag">github</a-->
+        <a href="/tag/#github" title="Tag: github" rel="tag">github</a>&nbsp;
+    
+        <!--a href="/tag/#blog" title="Tag: blog" rel="tag">blog</a-->
+        <a href="/tag/#blog" title="Tag: blog" rel="tag">blog</a>&nbsp;
+    
+        <!--a href="/tag/#hexo" title="Tag: hexo" rel="tag">hexo</a-->
+        <a href="/tag/#hexo" title="Tag: hexo" rel="tag">hexo</a>&nbsp;
+    
+        <!--a href="/tag/#Node.js" title="Tag: Node.js" rel="tag">Node.js</a-->
+        <a href="/tag/#Node.js" title="Tag: Node.js" rel="tag">Node.js</a>&nbsp;
+    
+        <!--a href="/tag/#Mac" title="Tag: Mac" rel="tag">Mac</a-->
+        <a href="/tag/#Mac" title="Tag: Mac" rel="tag">Mac</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <ul id="markdown-toc">
+  <li><a href="#准备工作" id="markdown-toc-准备工作">准备工作</a></li>
+  <li><a href="#初始化" id="markdown-toc-初始化">初始化</a></li>
+  <li><a href="#生成静态页面" id="markdown-toc-生成静态页面">生成静态页面</a></li>
+  <li><a href="#本地启动" id="markdown-toc-本地启动">本地启动</a></li>
+  <li><a href="#更换主题" id="markdown-toc-更换主题">更换主题</a></li>
+  <li><a href="#部署到github" id="markdown-toc-部署到github">部署到github</a></li>
+  <li><a href="#其他" id="markdown-toc-其他">其他</a></li>
+</ul>
+
+<h3 id="准备工作">准备工作</h3>
+
+<ul>
+  <li>
+    <p>安装node 到<a href="https://nodejs.org">Node.js官网</a>下载相应平台的最新版本，一路安装即可。</p>
+  </li>
+  <li>
+    <p>在终端控制台输入命令： <code class="highlighter-rouge">npm install -g hexo</code></p>
+  </li>
+  <li>
+    <p>输入命令<code class="highlighter-rouge">hexo -v</code>显示hexo的版本号即为安装成功</p>
+  </li>
+  <li>
+    <p>github的准备</p>
+  </li>
+</ul>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git config --global user.email xxx@163.com
+git config --global user.name xxx
+ssh-keygen -t rsa -C xxx@163.com(邮箱地址)      // 生成ssh
+找到.ssh文件夹打开，使用cat id_rsa.pub    //打开公钥ssh串
+登陆github，settings － SSH keys  － add ssh keys（把上面的内容全部添加进去即可）
+</code></pre></div></div>
+
+<h3 id="初始化">初始化</h3>
+
+<p>新建文件夹（比如Blog），然后进入Blog目录，以下所有的命令行操作都是在这个文件夹下进行的。</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ hexo init
+</code></pre></div></div>
+
+<h3 id="生成静态页面">生成静态页面</h3>
+
+<p>初始化完成之后，就已经生成一篇“hello word”的文章了，现在执行以下命令把文章编译为静态页面：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ hexo generate
+</code></pre></div></div>
+
+<h3 id="本地启动">本地启动</h3>
+
+<p>把文章变为页面之后，可以执行以下命令，本地启动服务，在浏览器中输入http://localhost:4000/查看生成的页面效果。</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ hexo server
+</code></pre></div></div>
+
+<p>最终效果如下：
+<img src="../../../../../image/HexoDemoDir.png" alt="" /></p>
+
+<h3 id="更换主题">更换主题</h3>
+
+<p>clone主题代码
+在目录下执行下面的命令clone主题代码：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia 
+</code></pre></div></div>
+
+<p>修改配置文件
+修改<code class="highlighter-rouge">Blog/_config.yml</code>文件：</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>theme: yilia    //默认为landscape
+</code></pre></div></div>
+
+<p>修改<code class="highlighter-rouge">themes/yilia/_config.yml</code>文件：</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Header
+menu:
+    主页: /
+    所有文章: /archives
+    丝茉茉: /categories/simomo/
+    相册: /photos
+# SubNav
+subnav:
+    github: "https://github.com/paulhappy"
+     weibo: "http://weibo.com/u/paulhappy"
+    zhihu: "#"
+    rss: /atom.xml
+# Content
+excerpt_link: 阅读全文
+fancybox: true
+mathjax: true
+top: true
+# 是否开启动画效果
+animate: true
+# 是否在新窗口打开链接
+open_in_new: false
+# Miscellaneous
+google_analytics: ''
+favicon: /favicon.ico
+#你的头像url
+avatar: /img.png
+#是否开启分享
+share_jia: true
+share_addthis: false
+#是否开启多说评论，填写你在多说申请的项目名称 duoshuo: duoshuo-key
+#若使用disqus，请在博客config文件中填写disqus_shortname，并关闭多说评论
+duoshuo: jarson7426
+#是否开启云标签
+tagcloud: true
+#是否开启友情链接
+#不开启——
+friends: false
+#开启——
+#friends:
+#  百度一下: http://www.baidu.com
+#  淘宝商城: http://www.taobao.com
+#是否开启“关于我”。
+#不开启——
+#aboutme: false
+#开启——
+aboutme: true
+</code></pre></div></div>
+
+<p>查看效果
+更改主题之后可以使用命令hexo server打开本地服务，查看效果。</p>
+
+<h3 id="部署到github">部署到github</h3>
+
+<p>上面所有的操作完成之后，你就可以将你的Blog项目部署到github上了。</p>
+
+<p>部署之前先修改<code class="highlighter-rouge">Blog/_config.yml</code>文件。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deploy:
+    type: git
+    repository: https://github.com/paulhappy/paulhappy.github.io.git  //paulhappy替换为你自己的用户名
+    branch: master
+</code></pre></div></div>
+<p>备注：在hexo3.x版本下，这里的type应该填git，不是github；另外冒号后面都有一个英文的空格，不然会报错的。</p>
+
+<p>然后使用以下命令进行部署。</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ hexo deploy
+</code></pre></div></div>
+
+<h2 id="其他">其他</h2>
+
+<ul>
+  <li><a href="https://hexo.io/zh-cn/docs/">hexo中文网</a></li>
+  <li><a href="https://www.cnblogs.com/jackyroc/p/7681938.html">github+hexo博客搭建1</a></li>
+  <li><a href="https://segmentfault.com/a/1190000004947261">github+hexo博客搭建2</a></li>
+</ul>
+
+        </article>
+        <hr>
+
+        
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+            
+            
+                
+                    
+                        
+                        <h2 id="similar_posts">Similar Posts</h2>
+                        <ul>
+                        
+                        <li class="relatedPost">
+                            <a href="/2019/02/11/create-blog-with-jekyll/">Mac下使用Jekyll 搭建静态博客
+                            
+                            </a>
+                        </li>
+                        
+                        
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            
+        
+        
+            </ul>
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+        <p><strong>上一篇</strong> <a href="/2019/02/13/FlutterArch/">Flutter原理简解</a></p>
+        
+    </div>
+    <div class="nex">
+
+        
+    </div>
+</div>
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    
+                    <!--li><a href="#comments">Comments</a></li-->
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+             Enjoy your life! 
+        </p>
+        <p class="contact">
+            Contact me at: 
+            <a href="https://github.com/paulhappy" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:56517206@qq.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" data-scroll>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/smooth-scroll.min.js " charset="utf-8"></script>
+    <script type="text/javascript">
+      smoothScroll.init({
+        speed: 500, // Integer. How fast to complete the scroll in milliseconds
+        easing: 'easeInOutCubic', // Easing pattern to use
+        offset: 20, // Integer. How far to offset the scrolling anchor location in pixels
+      });
+    </script>
+    <!-- <script src=" /js/scroll.min.js " charset="utf-8"></script> -->
+  </body>
+
+</html>

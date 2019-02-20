@@ -9,6 +9,10 @@ type: page
 * content
 {:toc}
 
+### 转型
+
+* [对iOS开发者说的话](http://www.cocoachina.com/programmer/20190219/26367.html)
+
 ### NodeJS
 
 * [七天学会NodeJS -Nanqiao Deng](https://nqdeng.github.io/7-days-nodejs)
